@@ -1,0 +1,219 @@
+<t t-name="website.expediente-clinico">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_cover parallax s_parallax_is_fixed bg-black-50 o_colored_level pt4 pb16" data-scroll-background-ratio="1" data-snippet="s_cover" data-name="Portada" style="background-image: none;">
+                <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/3388-7bd1ee0b/ca048a54561744903199e1309b111a7d.webp&quot;); background-position: 50% 38.9026%;" data-mimetype="image/webp"/>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="s_allow_columns container">
+                    
+
+                <div class="s_card card w-100" style="border-radius: 20px; background-color: rgba(200, 150, 150, 0.5); padding: 20px;" data-name="Tarjeta">
+                    <h4 class="card-header text-center title-header">
+                        <img src="/web/image/1082-e5263dd0/simbolo_home_insiders.svg" alt="" class="img img-fluid mx-auto d-block" style="width: 50%;" loading="lazy"/>
+                        <span id="panel-diagnostico" class="display-4 panel-text">
+                            Conoce las áreas de enfoque a mejorar con los resultados de tu test epigenético.
+                        </span>
+                        <span id="panel-tratamiento" class="display-4 panel-text hidden">
+                            Explora tu plan de longevidad personalizado.
+                        </span>
+                    </h4>
+                </div>
+                    
+                    <div class="tabs-container">
+                            <button class="tab-button active" onclick="showPanel('diagnostico', this)">Diagnóstico</button>
+                            <button class="tab-button" onclick="showPanel('tratamiento', this)">Plan de tratamiento</button>
+                    </div>
+
+                    
+                    <div id="panel-diagnostico" class="card toggle-card" style="background:rgba(200, 150, 150, 0.5); padding: 15px; margin: 10px auto; border-radius: 10px; max-width: 90%; cursor: pointer;">
+                        <h3 onclick="toggleContent(this)" style="color: black;">Áreas de enfoque</h3>
+                        <div class="toggle-content" style="display: none; padding: 10px;">
+                            <p style="color: black;">Equilibrio microbiano intestinal</p>
+                            <p style="color: black;">Síntesis de proteínas</p>
+                            <p style="color: black;">Sistema Inmune</p>
+                            <p style="color: black;">Metabolismo del azúcar</p>
+                            <p style="color: black;">Producción de energía</p>
+                        </div>
+                        <hr/>
+                        <h3 onclick="toggleContent(this)" style="color: black;">Metas</h3>
+                        <div class="toggle-content" style="display: none; padding: 10px;">
+                            <p style="color: black;">Mejora gastrointestinal</p>
+                            <p style="color: black;">Metabolismo de azúcar</p>
+                            <p style="color: black;">Mejora de la piel</p>
+                            <p style="color: black;">Mejora de cefaleasr</p>
+                            <p style="color: black;">Resilencia al estrés</p>
+                        </div>
+                    </div>
+
+                    <div id="panel-diagnostico" class="card toggle-card" style="background:rgba(200, 150, 150, 0.5); padding: 15px; margin: 10px auto; border-radius: 10px; max-width: 90%; cursor: pointer;">
+                        <h3 onclick="toggleContent(this)" style="color: black;">Déficit</h3>
+                        <div class="toggle-content" style="display: none; padding: 10px;">
+                                <div class="row">
+                                    <div class="cell title">Vitaminas:</div>
+                                    <div class="cell content"><strong>B2, B1, C y B5</strong></div>
+                                    <div class="cell bars" data-length="100"><span style="width: 100%;"/></div>
+                                </div>
+                            
+                                <div class="row">
+                                    <div class="cell title">Aminoácidos:</div>
+                                    <div class="cell content"><strong>Valina, ornitina, prolina y fenilalanina</strong></div>
+                                    <div class="cell bars" data-length="80"><span style="width: 80%;"/></div>
+                                </div>
+                            
+                                <div class="row">
+                                    <div class="cell title">Antioxidantes:</div>
+                                    <div class="cell content"><strong>Ácido alfa lipoico, fitoestrógenos, polifenoles y vitamina C</strong></div>
+                                    <div class="cell bars" data-length="90"><span style="width: 90%;"/></div>
+                                </div>
+                            
+                                <div class="row">
+                                    <div class="cell title">Minerales:</div>
+                                    <div class="cell content"><strong>Potasio, boro, litio, molibdeno y hierro</strong></div>
+                                    <div class="cell bars" data-length="70"><span style="width: 70%;"/></div>
+                                </div>
+                            
+                                <div class="row">
+                                    <div class="cell title">Ácidos grasos:</div>
+                                    <div class="cell content"><strong>Óptima</strong></div>
+                                    <div class="cell bars" data-length="50"><span style="width: 50%;"/></div>
+                                </div>
+                        </div>
+                        <hr/>
+                        <h3 onclick="toggleContent(this)" style="color: black;">Factores ambientales</h3>
+                        <div class="toggle-content" style="display: none; padding: 10px;">
+                            <p style="color: black;">Pendiente</p>
+                        </div>
+                    </div>
+                    <div id="panel-diagnostico" class="card toggle-card" style="background:rgba(200, 150, 150, 0.5); padding: 15px; margin: 10px auto; border-radius: 10px; max-width: 90%; cursor: pointer;">
+                        <h3 onclick="toggleContent(this)" style="color: black;">Restricciones de Alimentos</h3>
+                        <div class="toggle-content" style="display: none; padding: 10px;">
+                            <p style="color: black;">
+                                Durante 90 días a partir del diagnóstico
+                            </p>
+                            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+                                <span class="food-chip">Huevos</span>
+                                <span class="food-chip">Nuez</span>
+                                <span class="food-chip">Tomate</span>
+                                <span class="food-chip">Ciruela amarilla</span>
+                                <span class="food-chip">Calabacín</span>
+                                <span class="food-chip">Remolacha</span>
+                                <span class="food-chip">Patatas</span>
+                                <span class="food-chip">Granada</span>
+                                <span class="food-chip">Moras</span>
+                                <span class="food-chip">Pistache</span>
+                            </div>
+                        </div>
+                        <hr/>
+                        <h3 onclick="toggleContent(this)" style="color: black;">Aditivos Alimentarios a Evitar</h3>
+                        <div class="toggle-content" style="display: none; padding: 10px;">
+                            <p style="color: black;">
+                                Durante 90 días a partir del diagnóstico
+                            </p>
+                            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+                                <span class="food-chip">Helio</span>
+                                <span class="food-chip">Carboxitometiculosa de sodio</span>
+                                <span class="food-chip">Negro Brillante</span>
+                                <span class="food-chip">Silicato de calcio y aluminio</span>
+                                <span class="food-chip">Taibendazol</span>
+                                <span class="food-chip">Ácido inosínico</span>
+                                <span class="food-chip">Acetato de Ptoasio</span>
+                                <span class="food-chip">Glicina y glicinato Sodico</span>
+                                <span class="food-chip">Ácido eritórbico</span>
+                                <span class="food-chip">Clorofila A y B</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div id="panel-tratamiento" class="card toggle-card hidden" style="background:rgba(200, 150, 150, 0.5); padding: 15px; margin: 10px auto; border-radius: 10px; max-width: 90%; cursor: pointer;">
+                        <h3 onclick="toggleContent(this)" style="color: black;">Paso 1</h3>
+                        <div class="toggle-content" style="display: none; padding: 10px;">
+                            <p style="color: black;">Restringir alimentos, aditivos y factores ambientales que puedan estar generando estrés celular </p>
+                        </div>
+                        <hr/>
+                        <h3 onclick="toggleContent(this)" style="color: black;">Paso 2</h3>
+                        <div class="toggle-content" style="display: none; padding: 10px;">
+                            <p style="color: black;">Desintoxicación. Se refiere al proceso de eliminar toxinas o sustancias nocivas acumuladas en el organismo. Valorar tratamiento a cada paciente</p>
+                        </div>
+                        <hr/>
+                        <h3 onclick="toggleContent(this)" style="color: black;">Paso 3</h3>
+                        <div class="toggle-content" style="display: none; padding: 10px;">
+                            <p style="color: black;">Desintoxicación. Se refiere al proceso de eliminar toxinas o sustancias nocivas acumuladas en el organismo. Valorar tratamiento a cada paciente</p>
+                        </div>
+                    </div>
+                    <div id="panel-tratamiento" class="card toggle-card hidden" style="background:rgba(200, 150, 150, 0.5); padding: 15px; margin: 10px auto; border-radius: 10px; max-width: 90%; cursor: pointer;">
+                        <h3 style="color: black;">Plan de tratamiento</h3>
+                        <button class="custom-button">
+                            VER MI LONGEVITY JOURNEY
+                        </button>
+                    </div>
+                    <div id="panel-tratamiento" class="card toggle-card hidden" style="background:rgba(200, 150, 150, 0.5); padding: 15px; margin: 10px auto; border-radius: 10px; max-width: 90%; cursor: pointer;">
+                        <h3 style="color: black;">Suplementacion</h3>
+                        <button class="custom-button">
+                            VER MI LONGEVITY JOURNEY
+                        </button>
+                    </div>
+                    <div id="panel-tratamiento" class="card toggle-card hidden" style="background:rgba(200, 150, 150, 0.5); padding: 15px; margin: 10px auto; border-radius: 10px; max-width: 90%; cursor: pointer;">
+                        <h3 style="color: black;">Rutina de skin care</h3>
+                        <button class="custom-button">
+                            VER MI LONGEVITY JOURNEY
+                        </button>
+                    </div>
+                     <div id="panel-tratamiento" class="card hidden" style="background:rgba(200, 150, 150, 0.5); padding: 15px; margin: 10px auto; border-radius: 10px; max-width: 90%; cursor: pointer;">
+                        <h3 style="color: black;">Recuerda</h3>
+                        <p style="color: black;">Restringir alimentos, aditivos y factores ambientales que puedan estar generando estrés celular </p>
+                    </div>
+
+                    <p class="test-link" style="color: white;">Test epigenético completo</p>
+                </div>
+            </section>
+        </div>
+        <script>
+            // FUNCIONALIDAD PARA DESPLEGAR CONTENIDO (Debe estar fuera de DOMContentLoaded para que onclick funcione)
+            function toggleContent(element) {
+                let content = element.nextElementSibling; // Buscar el contenido siguiente
+                let icon = element.querySelector(".toggle-icon");
+        
+                if (content) { // Asegurarse de que el contenido existe
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                        if (icon) icon.innerHTML = "▼"; // Flecha abajo
+                    } else {
+                        content.style.display = "block";
+                        if (icon) icon.innerHTML = "▲"; // Flecha arriba
+                    }
+                }
+            }
+        
+            document.addEventListener("DOMContentLoaded", function() {
+                let bars = document.querySelectorAll(".bars span");
+        
+                bars.forEach(bar =&gt; {
+                    let length = bar.parentElement.getAttribute("data-length"); // Obtener la longitud de la barra
+                    setTimeout(() =&gt; {
+                        bar.style.width = length + "%"; // Expandir la barra animadamente
+                    }, 500);
+                });
+            });
+            function showPanel(panel) {
+                // Ocultar todos los paneles de diagnóstico y tratamiento
+                document.querySelectorAll("[id^='panel-diagnostico'], [id^='panel-tratamiento']").forEach(panel =&gt; {
+                    panel.classList.add("hidden");
+                });
+            
+                // Mostrar el panel seleccionado
+                document.querySelectorAll("#panel-" + panel).forEach(el =&gt; {
+                    el.classList.remove("hidden");
+                });
+            
+                // Actualizar botones activos
+                document.querySelectorAll(".tab-button").forEach(button =&gt; button.classList.remove("active"));
+            
+                // Asegurar que el botón clicado tenga la clase "active"
+                event.target.classList.add("active");
+            }
+
+        </script>
+
+
+    </t>
+</t>
